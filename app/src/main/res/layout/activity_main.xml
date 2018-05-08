@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="8dp">
+    <TextView
+        android:id="@+id/tv_btn_contactList"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/contact_list"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_btn_purple"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_btn_punch_in_out"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/bg_btn_blue"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:text="@string/punch_in_out" />
+    </LinearLayout>
+
+</LinearLayout>

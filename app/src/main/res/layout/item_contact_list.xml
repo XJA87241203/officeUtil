@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/MyTextStyle_Normal"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:text="Candy"/>
+
+    <TextView
+        android:id="@+id/tv_admin"
+        style="@style/MyTextStyle_Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/admin"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/bg_btn_blue_fillet"
+        android:textColor="@color/blue_500"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/MyTextStyle_Small"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/blue_500"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical|end"
+        android:text="candy.l@shopperplus.com"/>
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/android_arrow_right"
+        android:layout_marginStart="15dp"/>
+
+</LinearLayout>
